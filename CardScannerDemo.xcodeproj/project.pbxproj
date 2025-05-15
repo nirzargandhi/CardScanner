@@ -146,7 +146,6 @@
 		12E917582D7AD13A0087329B /* CardScannerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E917562D7AD13A0087329B /* CardScannerDemoTests.swift */; };
 		12E9175C2D7AD13D0087329B /* CardScannerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E917592D7AD13D0087329B /* CardScannerDemoUITests.swift */; };
 		12E9175D2D7AD13D0087329B /* CardScannerDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E9175A2D7AD13D0087329B /* CardScannerDemoUITestsLaunchTests.swift */; };
-		12E917602D7AD1A60087329B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12E9175F2D7AD1A60087329B /* Info.plist */; };
 		12E917612D7AD1A60087329B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12E9175F2D7AD1A60087329B /* Info.plist */; };
 		12E917622D7AD1A60087329B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12E9175F2D7AD1A60087329B /* Info.plist */; };
 		12E917652D7AD1FC0087329B /* CardScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E917642D7AD1FC0087329B /* CardScannerVC.swift */; };
@@ -567,7 +566,6 @@
 				124BBE122D3515A600DA6131 /* Images.xcassets in Resources */,
 				124BBE132D3515A600DA6131 /* Assets.xcassets in Resources */,
 				124BBE152D3515A600DA6131 /* LaunchScreen.storyboard in Resources */,
-				12E917602D7AD1A60087329B /* Info.plist in Resources */,
 				124BBE162D3515A600DA6131 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -837,6 +835,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CardScannerDemo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Privacy Description";
@@ -990,13 +989,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CardScannerDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1008,13 +1009,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CardScannerDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1025,12 +1028,15 @@
 		12FBCB782D3511B9009811E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CardScannerDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1041,12 +1047,15 @@
 		12FBCB792D3511B9009811E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.CardScannerDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
